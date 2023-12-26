@@ -1,0 +1,36 @@
+@media screen and (max-width:60em) {
+    main {
+        padding: 0;
+    }
+
+    section {
+        grid-template-areas: 
+        "card__left"
+        "card__right";
+
+        grid-template-columns: 1fr; 
+        height: 100%; 
+        min-width: 18.75rem;
+        border-radius: 0 0 2.8125rem 2.8125rem;
+        padding-bottom: 1.25rem;
+        
+
+
+        .left__card {
+            border-radius: 0 0 2.8125rem 2.8125rem;
+            min-height: 31.25rem; 
+            padding-bottom: 1.25rem;
+
+            p:nth-child(4) {
+                font-size: clamp(0.8125rem, 4vw, 1.3125rem); 
+                max-height: 2.625rem;
+            }
+        }
+
+        .right__card {
+            padding-top: 1.25rem;
+        }
+    }
+
+
+}
